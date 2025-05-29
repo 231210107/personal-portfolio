@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+
+	.project-grid,.skills-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		row-gap: 26px;
+		column-gap: 30px;
+    font-size: 1.3rem;
+	}
+	.project-grid div,.skills-grid div{
+		border-radius: 20px;
+
+	}
+  .project-grid>div:hover,.skills-grid>div:hover{
+		box-shadow: 0 45px 65px rgba(68, 44, 129, 0.5), 0 35px 22px rgba(0,0,0,0.16);
+    scale:1.02;
+
+	}
+  html{
+    font-size: 14px;
+  }
+  #contact {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  margin:0% 10%;
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-icons a img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover img {
+  transform: scale(1.2);
+}
+.scrolled {
+  background-color:rgb(36, 34, 34);
+  opacity: 0.9;
+}
+
+  </style>
+
+
+
+  <!-- External CSS background-color: rgb(32, 30, 50);-->
+  <link rel="stylesheet" href="header.css" />
+</head>
+<body style=" color: aliceblue;">
+
+  <!-- Header/Navbar -->
+  <div id="header">
+    <nav class="navbar">
+      <div class="logo">Sunny</div>
+      <ul class="main">
+        <li><a href="#about"><img style="background-color: aliceblue;"  class="icon" src="user.svg">About</a></li>
+        <li><a href="#skills"><img src="cpu.svg">Skills</a></li>
+        <li><a href="#experience"><img src="briefcase.svg">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact"><img src="mail.svg">Contact</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <ul class="dropdown">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about" style=" margin:0% 10%; text-align: center;">
+    <img id="img" src="image.png" style="width:100%; aspect-ratio: 1; border-radius: 50%; object-fit: cover;max-width: 400px;margin-top: 90px;" />
+    <div class="about-info" style="margin-top: 20px;">
+      <h1 style="color: greenyellow;font-size: 4rem;">Sunny Kumar</h1>
+      <h3 style="font-size: 1.5rem;" >Computer Science Student @ NIT Delhi</h3>
+      <div style="margin: 20px auto; border: 2px solid greenyellow; border-radius: 50px; display: inline-block; padding: 5px 15px;font-size: 1.5rem;">
+        Available for opportunities
+      </div>
+      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+        <a class="contact-btn" href="https://drive.google.com/file/d/1iDvvg7xDSF8VIsaIVBMeC6S9TEXHo1XL/view?usp=drive_link">🗄️
+          <span>Resume</span>
+        </a>
+          
+        <button class="github-btn">
+          <img src="github.jfif" style="width: 25px; height: 25px; margin-right: 8px;border-radius: 50%;" />
+          <span  style="color: aliceblue;">GitHub</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <div>
+
+  </div>
+  <section id="projects" class="project" style="margin:10%;">
+    <h2 style="color: greenyellow;font-size: 2.5rem;"><span>&lt;/&gt;</span>Projects</h2>
+    <div class="project-grid">
+      <div style="background-color: lightblue;padding:30px 30px;">
+        <a href="#">
+          <img style="width:100%;object-fit: contain;margin-bottom: 20px;border-radius:10px 10px 0 0;" src="ngo.jfif">
+        </a>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis. Perferendis quasi vitae pariatur dolorem est sapiente amet. Eligendi, reprehenderit. Unde inventore perferendis fugit sint modi autem repellat asperiores debitis!
+          </div>
+      </div>
+      <div style="background-color: lightpink;padding:30px 30px; ">
+          <a href="#">
+          <img style="width:100%;object-fit: contain;margin-bottom: 20px;border-radius:10px 10px 0 0;" src="ngo.jfif">
+          </a>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis. Perferendis quasi vitae pariatur dolorem est sapiente amet. Eligendi, reprehenderit. Unde inventore perferendis fugit sint modi autem repellat asperiores debitis!
+          </div>
+      </div>
+      <div style="background-color: lightblue;padding:30px 30px;">
+          <a href="#">
+          <img  style="width:100%;margin-bottom: 20px;border-radius:10px 10px 0 0;" src="ngo.jfif">
+          </a>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis. Perferendis quasi vitae pariatur dolorem est sapiente amet. Eligendi, reprehenderit. Unde inventore perferendis fugit sint modi autem repellat asperiores debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat excepturi aut sequi maxime 
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+   <div style="border-top: 1px solid yellowgreen;border-bottom: 1px solid yellowgreen;">
+<section id="skills" class="skills" style="margin:10%;">
+    <h2 style="color: greenyellow;font-size: 2.5rem;"><span>🧠</span>Skills</h2>
+    <div class="skills-grid">
+       <div class="skills-box">
+      <h3><span class="icon">&lt;/&gt;</span> Programming Languages</h3>
+      <div class="tag-container">
+        <span class="tag">C</span>
+        <span class="tag">C++</span>
+        <span class="tag">Javascript</span>
+        <span class="tag">Python</span>
+      </div>
+    </div>
+
+    <!-- Libraries & Frameworks -->
+    <div class="skills-box">
+      <h3><span class="icon">🗄️</span> Libraries & Frameworks</h3>
+      <div class="tag-container">
+        <span class="tag">Django</span>
+        <span class="tag">Express</span>
+        <span class="tag">Socket-io</span>
+        <span class="tag">Mongodb</span>
+        <span class="tag">tailwind</span>
+        <span class="tag">React</span>
+        <span class="tag">Flask</span>
+        <span class="tag">SQLite</span>
+      </div>
+    </div>
+
+    <!-- Technologies -->
+    <div class="skills-box">
+      <h3><span class="icon">💻</span> Technologies</h3>
+      <div class="tag-container">
+        <span class="tag">Vs Code</span>
+        <span class="tag">Aws</span>
+        <span class="tag">Html</span>
+        <span class="tag">nodejs</span>
+        <span class="tag">Css3</span>
+        <span class="tag">Git</span>
+      </div>
+    </div>
+  </div>
+  </section>
+   </div>
+  
+  <section id="contact">
+  <h2>Contacts</h2>
+  <div class="contact-icons">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sunnyshivam24@gmail.com" target="_blank" title="Send Email">
+      <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="Gmail Icon">
+    </a>
+    <a href="tel:+91 8920203530" title="Call Me">
+      <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone Icon">
+    </a>
+    <a href="https://www.linkedin.com/in/sunny-kumar-50bb35249/ arget="_blank title="LinkedIn Profile">
+      <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn Icon">
+    </a>
+  </div>
+</section>
+
+
+  <!-- JavaScript for Toggle Button -->
+
+  <script>
+    const toggleBtn = document.querySelector(".toggle_btn");
+    const toggleBtnIcon = document.querySelector(".toggle_btn i");
+    const dropDownMenu = document.querySelector(".dropdown");
+
+    toggleBtn.onclick = () => {
+      dropDownMenu.classList.toggle("open");
+      const isOpen = dropDownMenu.classList.contains("open");
+      toggleBtnIcon.className = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+    };
+
+    document.addEventListener("click", (e) => {
+      if (!toggleBtn.contains(e.target) && !dropDownMenu.contains(e.target)) {
+        dropDownMenu.classList.remove("open");
+        toggleBtnIcon.className = "fa-solid fa-bars";
+      }
+    });
+    window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('header');
+  if (window.scrollY > 0) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+    
+
+  </script>
+</body>
+</html>
