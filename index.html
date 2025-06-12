@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+
+	.project-grid,.skills-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		row-gap: 26px;
+		column-gap: 30px;
+    font-size: 1.3rem;
+	}
+	.project-grid div,.skills-grid div{
+		border-radius: 20px;
+
+	}
+  .project-grid>div:hover,.skills-grid>div:hover{
+		box-shadow: 0 45px 65px rgba(68, 44, 129, 0.5), 0 35px 22px rgba(0,0,0,0.16);
+    scale:1.02;
+
+	}
+  html{
+    font-size: 14px;
+  }
+  #contact {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  margin:5% 10% 2% 10% ;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons a img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease;
+  
+}
+
+.contact-icons a:hover img {
+  transform: scale(1.2);
+}
+.scrolled {
+  background-color:rgb(36, 34, 34);
+  opacity: 0.9;
+}
+/* styles.css */
+#cont {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#cont h2 {
+  text-align: center;
+}
+
+#cont form div {
+  margin-bottom: 1px;
+}
+
+#cont label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#cont input, #cont textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius:14px ;
+
+}
+
+#cont button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#cont button:hover {
+  background-color: #45a049;
+}
+
+  </style>
+
+
+
+  <!-- External CSS background-color: rgb(32, 30, 50);-->
+  <link rel="stylesheet" href="header.css" />
+</head>
+<body style=" color: aliceblue;">
+
+  <!-- Header/Navbar -->
+  <div id="header">
+    <nav class="navbar">
+      <div class="logo">Sunny</div>
+      <ul class="main">
+        <li style="display: flex; gap: 10px;"><svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 100.4 100.4" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff" stroke-width="3.012"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M20.4,19.3L32,24.4c-2.3,3.4-3.5,7.3-3.5,11.4c0,11.2,9.1,20.4,20.4,20.4s20.4-9.1,20.4-20.4c0-4-1.2-8-3.4-11.3l10.2-4.8 l0,19.4L73,45.7c-0.2,0.5-0.2,1,0.1,1.4s0.8,0.7,1.3,0.7h5.9c0.5,0,1-0.2,1.2-0.7c0.3-0.4,0.3-0.9,0.1-1.4l-2.7-6.6V18.4 c0-0.8-0.1-1.4-1.5-2C77.1,16.3,49.6,4.1,49.6,4.1c-0.4-0.2-0.8-0.2-1.2,0l-28,12.4c-0.5,0.2-0.9,0.8-0.9,1.4S19.8,19,20.4,19.3z M66.2,35.8c0,9.6-7.8,17.4-17.4,17.4s-17.4-7.8-17.4-17.4c0-3.7,1.2-7.2,3.3-10.2l13.6,6.1c0.2,0.1,0.4,0.1,0.6,0.1s0.4,0,0.6-0.1 l13.4-6C65.1,28.7,66.2,32.2,66.2,35.8z M76.7,44.8l0.7-1.5l0.6,1.5H76.7z M49,7.1l24.3,10.8L49,28.7L24.7,17.9L49,7.1z"></path> <path d="M49.4,59.8C29.9,59.8,14,75.7,14,95.2c0,0.8,0.7,1.5,1.5,1.5h67.8c0.8,0,1.5-0.7,1.5-1.5C84.8,75.7,68.9,59.8,49.4,59.8z M17.1,93.7c0.8-17.2,15-30.9,32.4-30.9S81,76.6,81.8,93.7H17.1z"></path> </g> </g></svg><a href="#about">About</a></li>
+        <li style="display: flex; gap: 10px;"><a href="#skills">Skills</a></li>
+        <li style="display: flex;"><svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 100.4 100.4" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff" stroke-width="2.5100000000000002"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M76.9,34v-2.7c3.4-2,5.6-5.7,5.6-9.7v-4.8c0-6.2-5-11.2-11.2-11.2S60,10.6,60,16.8v4.8c0,3.9,2,7.5,5.4,9.5v2.9 c-1.5,0.4-2.9,1-4.3,1.8c-2.2-5.1-7.3-8.7-13.2-8.7c-5.8,0-10.7,3.4-13,8.4c-1.3-0.6-2.6-1.2-3.9-1.5v-2.7c3.4-2,5.6-5.7,5.6-9.7 v-4.8c0-6.2-5-11.2-11.2-11.2s-11.2,5-11.2,11.2v4.8c0,3.9,2,7.5,5.4,9.5v2.9c-9,2.6-15.1,10.7-15.1,20.1c0,0.8,0.7,1.5,1.5,1.5 h29.6c0.1,0,0.2,0,0.3,0c1.2,1.9,2.9,3.5,4.9,4.7v4.5c-11.9,3.2-20,13.9-20,26.3c0,0.8,0.7,1.5,1.5,1.5h51.5c0.8,0,1.5-0.7,1.5-1.5 c0-12.3-8.5-23.2-20.3-26.3v-4.3c2.1-1.2,3.8-2.8,5.1-4.8h30.7c0.8,0,1.5-0.7,1.5-1.5C92.2,44.8,85.8,36.5,76.9,34z M7.5,52.7 c0.6-7.8,6.2-14.2,13.9-16c0.7-0.2,1.2-0.8,1.2-1.5v-5c0-0.6-0.3-1.1-0.8-1.3c-2.8-1.4-4.6-4.2-4.6-7.3v-4.8c0-4.5,3.7-8.2,8.2-8.2 s8.2,3.7,8.2,8.2v4.8c0,3.1-1.9,6-4.7,7.4c-0.5,0.2-0.9,0.8-0.9,1.4v4.8c0,0.7,0.5,1.3,1.2,1.5c1.7,0.4,3.3,1,4.8,1.8 c-0.2,1-0.3,2-0.3,3.1V48c0,1.6,0.3,3.2,0.8,4.7L7.5,52.7L7.5,52.7z M52.8,58.2c-0.5,0.2-0.9,0.8-0.9,1.4v6.4c0,0.7,0.5,1.3,1.2,1.5 c10.6,2.3,18.4,11.5,19.1,22.2H23.8c0.6-10.7,8.2-19.7,18.8-22.1c0.7-0.2,1.2-0.8,1.2-1.5v-6.6c0-0.6-0.3-1.1-0.8-1.3 c-3.9-1.9-6.3-5.8-6.3-10.1v-6.4c0-6.3,5.1-11.3,11.3-11.3s11.3,5.1,11.3,11.3V48C59.3,52.3,56.8,56.3,52.8,58.2z M61.5,52.7 c0.5-1.5,0.8-3.1,0.8-4.7v-6.4c0-0.9-0.1-1.9-0.3-2.7c1.6-1,3.4-1.7,5.2-2.1c0.7-0.2,1.2-0.8,1.2-1.5v-5c0-0.6-0.3-1.1-0.8-1.3 c-2.8-1.4-4.6-4.2-4.6-7.3v-4.8c0-4.5,3.7-8.2,8.2-8.2c4.5,0,8.2,3.7,8.2,8.2v4.8c0,3.1-1.9,6-4.7,7.4c-0.5,0.2-0.9,0.8-0.9,1.4v4.8 c0,0.7,0.5,1.3,1.2,1.5c7.7,1.7,13.4,8.3,14.1,16L61.5,52.7L61.5,52.7z"></path></g></svg><a href="#experience">Experience</a></li>
+        <li style="display: flex; gap: 10px;"><svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 100.353 100.353" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M69.294,11.442c-6.788-5.594-15.724-7.82-24.512-6.109C32.951,7.636,23.449,17.623,21.675,29.62 c-1.447,9.79,2.031,19.567,9.304,26.155c3.277,2.968,5.254,7.243,5.568,12.039c0.006,0.087,0.023,0.171,0.042,0.254v15.039 c0,0.828,0.671,1.5,1.5,1.5h1.495c0.609,4.359,3.813,7.697,7.672,7.697h6.81c3.859,0,7.062-3.338,7.671-7.697h1.495 c0.828,0,1.5-0.672,1.5-1.5V67.828c0-0.003,0.001-0.006,0.001-0.01c0-4.462,2.026-8.771,5.706-12.133 c6.062-5.538,9.538-13.415,9.538-21.61C79.978,25.287,76.084,17.037,69.294,11.442z M45.357,39.91h-2.305 c-1.271,0-2.305-1.034-2.305-2.305s1.034-2.305,2.305-2.305s2.305,1.034,2.305,2.305V39.91z M55.966,37.605 c0-1.271,1.034-2.305,2.306-2.305c1.271,0,2.305,1.034,2.305,2.305s-1.034,2.305-2.305,2.305h-2.303L55.966,37.605z M55.063,69.211 h6.67v12.396H60.36c-0.003,0-0.006-0.001-0.01-0.001s-0.006,0.001-0.01,0.001H40.982c-0.003,0-0.006-0.001-0.01-0.001 s-0.006,0.001-0.01,0.001H39.59V69.211h14.366 M48.357,66.211V42.91h4.617l0.034,23.301H48.357z M54.066,89.304h-6.81 c-2.238,0-4.117-2.004-4.637-4.697h16.083C58.183,87.3,56.304,89.304,54.066,89.304z M68.416,53.471 c-3.872,3.537-6.164,8.013-6.593,12.74h-5.816L55.974,42.91h2.298c2.925,0,5.305-2.38,5.305-5.305c0-2.925-2.38-5.305-5.305-5.305 c-2.926,0-5.306,2.38-5.306,5.307l0.003,2.303h-4.612v-2.305c0-2.925-2.38-5.305-5.305-5.305c-2.925,0-5.305,2.38-5.305,5.305 c0,2.925,2.38,5.305,5.305,5.305h2.305v23.301h-5.972c-0.636-5.005-2.864-9.465-6.393-12.66c-6.528-5.914-9.65-14.696-8.35-23.493 c1.591-10.76,10.108-19.716,20.712-21.781c7.908-1.538,15.938,0.458,22.03,5.48c6.096,5.023,9.592,12.429,9.592,20.319 C76.978,41.43,73.857,48.5,68.416,53.471z"></path></g></svg><a href="#projects">Projects</a></li>
+        <li style="display: flex; gap: 10px;"><svg fill="#ffffff" width="28px" height="28px" viewBox="0 0 100.354 100.354" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M93.09,76.224c0.047-0.145,0.079-0.298,0.079-0.459V22.638c0-0.162-0.032-0.316-0.08-0.462 c-0.007-0.02-0.011-0.04-0.019-0.06c-0.064-0.171-0.158-0.325-0.276-0.46c-0.008-0.009-0.009-0.02-0.017-0.029 c-0.005-0.005-0.011-0.007-0.016-0.012c-0.126-0.134-0.275-0.242-0.442-0.323c-0.013-0.006-0.023-0.014-0.036-0.02 c-0.158-0.071-0.33-0.111-0.511-0.123c-0.018-0.001-0.035-0.005-0.053-0.005c-0.017-0.001-0.032-0.005-0.049-0.005H8.465 c-0.017,0-0.033,0.004-0.05,0.005c-0.016,0.001-0.032,0.004-0.048,0.005c-0.183,0.012-0.358,0.053-0.518,0.125 c-0.01,0.004-0.018,0.011-0.028,0.015c-0.17,0.081-0.321,0.191-0.448,0.327c-0.005,0.005-0.011,0.006-0.016,0.011 c-0.008,0.008-0.009,0.019-0.017,0.028c-0.118,0.135-0.213,0.29-0.277,0.461c-0.008,0.02-0.012,0.04-0.019,0.061 c-0.048,0.146-0.08,0.3-0.08,0.462v53.128c0,0.164,0.033,0.32,0.082,0.468c0.007,0.02,0.011,0.039,0.018,0.059 c0.065,0.172,0.161,0.327,0.28,0.462c0.007,0.008,0.009,0.018,0.016,0.026c0.006,0.007,0.014,0.011,0.021,0.018 c0.049,0.051,0.103,0.096,0.159,0.14c0.025,0.019,0.047,0.042,0.073,0.06c0.066,0.046,0.137,0.083,0.21,0.117 c0.018,0.008,0.034,0.021,0.052,0.028c0.181,0.077,0.38,0.121,0.589,0.121h83.204c0.209,0,0.408-0.043,0.589-0.121 c0.028-0.012,0.054-0.03,0.081-0.044c0.062-0.031,0.124-0.063,0.181-0.102c0.03-0.021,0.057-0.048,0.086-0.071 c0.051-0.041,0.101-0.082,0.145-0.129c0.008-0.008,0.017-0.014,0.025-0.022c0.008-0.009,0.01-0.021,0.018-0.03 c0.117-0.134,0.211-0.288,0.275-0.458C93.078,76.267,93.083,76.246,93.09,76.224z M9.965,26.04l25.247,23.061L9.965,72.346V26.04z M61.711,47.971c-0.104,0.068-0.214,0.125-0.301,0.221c-0.033,0.036-0.044,0.083-0.073,0.121l-11.27,10.294L12.331,24.138h75.472 L61.711,47.971z M37.436,51.132l11.619,10.613c0.287,0.262,0.649,0.393,1.012,0.393s0.725-0.131,1.011-0.393l11.475-10.481 l25.243,23.002H12.309L37.436,51.132z M64.778,49.232L90.169,26.04v46.33L64.778,49.232z"></path></g></svg><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <ul class="dropdown">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about" style=" margin:0% 10%; text-align: center;">
+    <img id="img" src="image.png" style="width:100%; aspect-ratio: 1; border-radius: 50%; object-fit: cover;max-width: 400px;margin-top: 90px;" />
+    <div class="about-info" style="margin-top: 20px;">
+      <h1 style="color: greenyellow;font-size: 4rem;">Sunny Kumar</h1>
+      <h3 style="font-size: 1.5rem;" >Computer Science Student @ NIT Delhi</h3>
+      <div style="margin: 20px auto; border: 2px solid greenyellow; border-radius: 50px; display: inline-block; padding: 5px 15px;font-size: 1.5rem;"><svg height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#FFC61B;" d="M196.594,512c-1.716,0-3.45-0.313-5.119-0.96c-5.85-2.273-9.504-8.13-8.971-14.384l14.522-170.571 H48.049c-4.648,0-8.999-2.283-11.64-6.108c-2.641-3.825-3.235-8.702-1.588-13.049L147.627,9.135C149.71,3.637,154.976,0,160.854,0 h232.583c4.743,0,9.167,2.376,11.788,6.328c2.621,3.952,3.088,8.955,1.242,13.321l-49.4,116.91h106.884 c5.391,0,10.311,3.064,12.692,7.9s1.803,10.606-1.485,14.876l-48.819,63.388c-4.767,6.191-13.648,7.341-19.837,2.576 c-6.19-4.767-7.343-13.648-2.576-19.837l31.278-40.612h-99.471c-4.743,0-9.167-2.376-11.788-6.328s-3.088-8.955-1.242-13.321 l49.402-116.912H170.623L68.532,297.794h143.894c3.961,0,7.739,1.661,10.418,4.576c2.679,2.917,4.013,6.822,3.676,10.768 l-11.743,137.929l121.963-158.363c4.768-6.19,13.648-7.341,19.837-2.576c6.19,4.767,7.342,13.648,2.576,19.837L207.803,506.485 C205.066,510.04,200.889,512,196.594,512z"></path> <polygon style="fill:#FEE187;" points="274.026,255.36 129.983,255.36 199.925,70.724 307.059,70.724 249.356,207.284 346.772,207.284 259.542,338.02 "></polygon> <path style="fill:#FFC61B;" d="M259.538,352.166c-1.76,0-3.54-0.328-5.255-1.016c-6.21-2.487-9.828-8.983-8.674-15.572 l11.579-66.073H129.985c-4.648,0-8.999-2.283-11.64-6.108c-2.641-3.825-3.235-8.702-1.588-13.048l69.94-184.636 c2.082-5.498,7.348-9.135,13.228-9.135H307.06c4.743,0,9.167,2.376,11.788,6.328c2.621,3.952,3.088,8.955,1.241,13.321l-49.4,116.91 h76.084c5.217,0,10.012,2.873,12.471,7.473c2.461,4.6,2.19,10.183-0.706,14.522l-87.232,130.737 C268.618,349.899,264.153,352.166,259.538,352.166z M150.466,241.215h123.56c4.178,0,8.143,1.847,10.831,5.047 c2.686,3.2,3.822,7.425,3.101,11.539l-2.886,16.47l35.259-52.843h-70.974c-4.743,0-9.169-2.376-11.788-6.328 c-2.62-3.952-3.086-8.955-1.24-13.321l49.399-116.91h-76.035L150.466,241.215z"></path> </g></svg>
+        <span>
+        Available for opportunities
+        </span>
+      </div>
+      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+        <a class="contact-btn" href="https://drive.google.com/file/d/1iDvvg7xDSF8VIsaIVBMeC6S9TEXHo1XL/view?usp=drive_link"><svg fill="#ffffff" width="24px" height="24px" viewBox="0 0 100.4 100.4" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff" stroke-width="2.008"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M79.1,10.1H63.2V3.3c0-0.8-0.7-1.5-1.5-1.5H38c-0.8,0-1.5,0.7-1.5,1.5v6.8H19.7c-3.5,0-6.3,2.8-6.3,6.3v75.4 c0,3.5,2.8,6.3,6.3,6.3h59.5c3.5,0,6.3-2.8,6.3-6.3V16.4C85.4,12.9,82.6,10.1,79.1,10.1z M38,29.5h23.7c0.8,0,1.5-0.7,1.5-1.5v-6.5 h10.5v64.7H25.1V21.6h11.4V28C36.5,28.9,37.2,29.5,38,29.5z M60.2,4.8V20c0,0,0,0,0,0s0,0,0,0v6.5H39.5v-6.5c0,0,0,0,0,0s0,0,0,0 v-8.5c0,0,0,0,0,0s0,0,0,0V4.8L60.2,4.8L60.2,4.8z M82.4,91.7c0,1.8-1.5,3.3-3.3,3.3H19.7c-1.8,0-3.3-1.5-3.3-3.3V16.4 c0-1.8,1.5-3.3,3.3-3.3h16.8v5.5H23.6c-0.8,0-1.5,0.7-1.5,1.5v67.7c0,0.8,0.7,1.5,1.5,1.5h51.6c0.8,0,1.5-0.7,1.5-1.5V20.1 c0-0.8-0.7-1.5-1.5-1.5h-12v-5.5h15.9c1.8,0,3.3,1.5,3.3,3.3V91.7z"></path> <path d="M28.8,46.4c0,0.8,0.7,1.5,1.5,1.5h38.5c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5H30.3C29.5,44.9,28.8,45.6,28.8,46.4z"></path> <path d="M68.8,55.4H30.3c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h38.5c0.8,0,1.5-0.7,1.5-1.5S69.6,55.4,68.8,55.4z"></path> <path d="M68.8,66.4H30.3c-0.8,0-1.5,0.7-1.5,1.5c0,0.8,0.7,1.5,1.5,1.5h38.5c0.8,0,1.5-0.7,1.5-1.5C70.3,67.1,69.6,66.4,68.8,66.4z "></path> </g> </g></svg>
+          <span>Resume</span>
+        </a>
+          
+        <button class="github-btn">
+          <img src="github.jfif" style="width: 25px; height: 25px; margin-right: 8px;border-radius: 50%;" />
+          <span  style="color: aliceblue;">GitHub</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <div>
+
+  </div>
+  <section id="projects" class="project" style="margin:10%;">
+    <h2 style="color: greenyellow;font-size: 2.5rem;"><span >&lt;/&gt;</span>Projects</h2>
+    <div class="project-grid">
+      <div style="background-color: lightblue;padding:30px 30px;">
+        <a href="#">
+          <img style="width:100%;object-fit: contain;margin-bottom: 20px;border-radius:10px 10px 0 0;" src="ngo.jfif">
+        </a>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis. Perferendis quasi vitae pariatur dolorem est sapiente amet. Eligendi, reprehenderit. Unde inventore perferendis fugit sint modi autem repellat asperiores debitis!
+          </div>
+      </div>
+      <div style="background-color: lightpink;padding:30px 30px; ">
+          <a href="#">
+          <img style="width:100%;object-fit: contain;margin-bottom: 20px;border-radius:10px 10px 0 0;" src="ngo.jfif">
+          </a>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis. Perferendis quasi vitae pariatur dolorem est sapiente amet. Eligendi, reprehenderit. Unde inventore perferendis fugit sint modi autem repellat asperiores debitis!
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+   <div style="border-top: 1px solid yellowgreen;border-bottom: 1px solid yellowgreen;">
+<section id="skills" class="skills" style="margin: 4% 10%;">
+    <h2 style="color: greenyellow;font-size: 2.5rem;"><span>🧠</span>Skills</h2>
+    <div class="skills-grid">
+       <div class="skills-box">
+      <h3><span class="icon">&lt;/&gt;</span> Programming Languages</h3>
+      <div class="tag-container">
+        <span class="tag">C</span>
+        <span class="tag">C++</span>
+        <span class="tag">Javascript</span>
+        <span class="tag">Python</span>
+      </div>
+    </div>
+
+    <!-- Libraries & Frameworks -->
+    <div class="skills-box">
+      <h3><span class="icon">🗄️</span> Libraries & Frameworks</h3>
+      <div class="tag-container">
+        <span class="tag">Django</span>
+        <span class="tag">Express</span>
+        <span class="tag">Socket-io</span>
+        <span class="tag">Mongodb</span>
+        <span class="tag">tailwind</span>
+        <span class="tag">React</span>
+        <span class="tag">Flask</span>
+        <span class="tag">SQLite</span>
+      </div>
+    </div>
+
+    <!-- Technologies -->
+    <div class="skills-box">
+      <h3><span class="icon">💻</span> Technologies</h3>
+      <div class="tag-container">
+        <span class="tag">Vs Code</span>
+        <span class="tag">Aws</span>
+        <span class="tag">Html</span>
+        <span class="tag">nodejs</span>
+        <span class="tag">Css3</span>
+        <span class="tag">Git</span>
+      </div>
+    </div>
+  </div>
+  </section>
+   </div>
+   <section class="leetcode">
+    <div class="totalQ"></div>
+    <div class="totalEasy"></div>
+    <div class="totalMedium"></div>
+    <div class="totalHard"></div>
+    
+    <section>
+  
+  <section id="contact">
+  <div class="contact-icons">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sunnyshivam24@gmail.com" target="_blank" title="Send Email">
+      <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="Gmail Icon">
+      <span style="margin-left: 10px;">sunnyshivam24@gmail.com</span>
+    </a>
+    <a href="tel:+91 8920203530" title="Call Me">
+      <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone Icon">
+      <span style="margin-left:10px;">+91 8920203530</span>
+    </a>
+    <a href="https://www.linkedin.com/in/sunny-kumar-50bb35249/ arget="_blank title="LinkedIn Profile">
+      <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn Icon" _target="_blank">
+      <span style="margin-left: 10px;">sunnyshivam24@gmail.com</span>
+    </a>
+  </div>
+    <section id="cont">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="response-message"></p>
+  </section>
+</section>
+
+
+
+<script></script>
+
+  <!-- JavaScript for Toggle Button -->
+
+  <script>
+    
+    const toggleBtn = document.querySelector(".toggle_btn");
+    const toggleBtnIcon = document.querySelector(".toggle_btn i");
+    const dropDownMenu = document.querySelector(".dropdown");
+
+    toggleBtn.onclick = () => {
+      dropDownMenu.classList.toggle("open");
+      const isOpen = dropDownMenu.classList.contains("open");
+      toggleBtnIcon.className = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+    };
+
+    document.addEventListener("click", (e) => {
+      if (!toggleBtn.contains(e.target) && !dropDownMenu.contains(e.target)) {
+        dropDownMenu.classList.remove("open");
+        toggleBtnIcon.className = "fa-solid fa-bars";
+      }
+    });
+    window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('header');
+  if (window.scrollY > 0) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+    const form = document.getElementById("contact-form");
+    const responseMessage = document.getElementById("response-message");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+        .then(() => {
+          responseMessage.textContent = "Message sent successfully!";
+          responseMessage.style.color = "green";
+          form.reset();
+        }, (error) => {
+          console.error(error);
+          responseMessage.textContent = "Oops! Something went wrong.";
+          responseMessage.style.color = "red";
+        });
+    });
+
+  </script>
+  <script src="leetcode.js"></script>
+</body>
+</html>
